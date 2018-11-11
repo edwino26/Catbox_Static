@@ -1,0 +1,34 @@
+name: catbox
+description: View cats that are up for adoption.
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  firebase_core: ^0.2.5+1
+  firebase_auth: ^0.6.2+1
+  google_sign_in: ^3.2.2
+
+
+  font_awesome_flutter: "8.1.0"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  cloud_firestore: ^0.8.0
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Ubuntu
+      fonts:
+        - asset: fonts/Ubuntu-Regular.ttf
+        - asset: fonts/Ubuntu-Bold.ttf
+
+  assets:
+    - assets/cats.json
+    - images/profile_header_background.png
